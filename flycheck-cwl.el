@@ -14,7 +14,7 @@
 ;; Requirements:
 ;;   * Emacs 24.4 or later
 ;;   * flycheck.el
-;;   * Schema Salad
+;;   * Schema Salad (master branch)
 ;;
 ;; To use this package, add the following line to your .emacs file:
 ;;     (require 'flycheck-cwl)
@@ -36,6 +36,7 @@
   "A CWL syntax checker using the Schema Salad."
   :command ("schema-salad-tool"
             "--quiet"
+            "--print-oneline"
             (eval flycheck-cwl-schema-path)
             source)
   :error-patterns
