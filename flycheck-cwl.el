@@ -1,4 +1,4 @@
-;;; Flycheck-cwl -- on-the-fly syntax checker for Common Workflow Language
+;;; flycheck-cwl.el --- on-the-fly syntax checker for CWL
 
 ;; Version: 0.0.0
 ;; Author: Tomoya Tanjo <ttanjo@gmail.com>
@@ -46,7 +46,7 @@
   :modes cwl-mode)
 
 ;;;###autoload
-(defun setup-flycheck-cwl ()
+(defun flycheck-cwl-setup ()
   "Set up for flycheck cwl checker."
   (add-to-list 'flycheck-checkers 'cwl 'append)
   (flycheck-add-next-checker 'yaml-jsyaml '(warning . cwl))
