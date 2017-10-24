@@ -38,7 +38,7 @@
             "--quiet"
             "--print-oneline"
             (eval flycheck-cwl-schema-path)
-            source)
+            source-inplace)
   :error-patterns
   ((error line-start
           (file-name) ":" line ":" column ":" (zero-or-more blank) (message (one-or-more not-newline))
