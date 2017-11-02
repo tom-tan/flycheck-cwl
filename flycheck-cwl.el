@@ -41,7 +41,8 @@
             source-inplace)
   :error-patterns
   ((error line-start
-          (file-name) ":" line ":" column ":" (zero-or-more blank) (message (one-or-more not-newline))
+          (file-name) ":" line ":" column ":" (zero-or-more blank)
+          (message (one-or-more not-newline))
           line-end))
   :modes cwl-mode)
 
