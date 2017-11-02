@@ -14,7 +14,7 @@
 ;; Requirements:
 ;;   * Emacs 24.4 or later
 ;;   * flycheck.el
-;;   * Schema Salad (master branch)
+;;   * Schema Salad (2.6.20171101113912 or later)
 ;;
 ;; To use this package, add the following line to your .emacs file:
 ;;     (require 'flycheck-cwl)
